@@ -2,23 +2,27 @@
   "name": "vizq",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "start": "node --harmony --use_strict --harmony_generators app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sikuli/vizq.git"
+    "url": "https://github.com/ryosuzuki/vizq.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sikuli/vizq/issues"
+    "url": "https://github.com/ryosuzuki/vizq/issues"
   },
-  "homepage": "https://github.com/sikuli/vizq",
+  "engine": {
+    "node": "^0.11.9"
+  },
+  "homepage": "https://github.com/ryosuzuki/vizq",
   "dependencies": {
     "browserify": "^11.1.0",
     "co-views": "^2.1.0",
