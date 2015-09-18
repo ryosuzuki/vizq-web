@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node --harmony --use_strict --harmony_generators app.js",
+    "start": "node --harmony app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
