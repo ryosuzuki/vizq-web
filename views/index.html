@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+
+<div class="ui grid">
+  <div class="four wide column">
+    <div class="ui secondary pointing menu">
+      <a class="item active">
+        JSON data
+      </a>
+      <a class="item">
+        Convert
+      </a>
+    </div>
+    <div class="ui segment">
+      <pre id="result"></pre>
+    </div>
+    <pre style="word-wrap: break-word;">{{ JSON.stringify(window.data) }}</pre>
+  </div>
+  <div class="four wide column">
+    <div id="editor"></div>
+  </div>
+  <div class="eight wide column">
+    <button id="viz" class="ui green button">Viz</button>
+    <div id="canvas"></div>
+  </div>
+</div>
+
+
+{% endblock %}
