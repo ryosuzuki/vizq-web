@@ -5,17 +5,19 @@
 <div class="ui grid">
   <div class="four wide column">
     <div class="ui secondary pointing menu">
-      <a class="item active">
+      <a class="item active" data-tab="data">
         JSON data
       </a>
-      <a class="item">
+      <a class="item" data-tab="result">
         Convert
       </a>
     </div>
-    <div class="ui segment">
+    <div class="ui tab active segment" data-tab="data">
+      <pre id="data"></pre>
+    </div>
+    <div class="ui tab segment" data-tab="result">
       <pre id="result"></pre>
     </div>
-    <pre style="word-wrap: break-word;">{{ JSON.stringify(window.data) }}</pre>
   </div>
   <div class="four wide column">
     <div id="editor"></div>
@@ -23,6 +25,7 @@
   <div class="eight wide column">
     <button id="viz" class="ui green button">Viz</button>
     <div id="canvas"></div>
+    <div id="canvas2"></div>
   </div>
 </div>
 
