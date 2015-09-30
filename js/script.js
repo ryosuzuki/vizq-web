@@ -1,8 +1,9 @@
+vizq.load(data.slice(0,1000))
 
 // var data = require('data/fcq.5000.json')
 var editor = ace.edit("editor");
 
-var text = "vizq.load(data.slice(0,100))\nvizq.select(['Subject', 'CrsPBAColl', 'CrsLvlNum', 'Hours'])\nvizq.groupBy('Subject')\nvizq.groupBy('CrsLvlNum')"
+var text = "{\n  Subject: 'col',\n  CrsLvlNum: 'col'\n}"
 editor.setValue(text);
 
 
@@ -12,7 +13,7 @@ $('#data').text(JSON.stringify(window.data, null, 2));
 
 $('#viz').click( function () {
   var text = editor.getValue();
-  result = eval(text);
+  result = vizq.eval(text);
   console.log(result);
   $('#result').text(JSON.stringify(result, null, 2));
   $('.item').removeClass('active')
