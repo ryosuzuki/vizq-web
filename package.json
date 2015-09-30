@@ -12,17 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryosuzuki/vizq.git"
+    "url": "https://github.com/ryosuzuki/vizq-web.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryosuzuki/vizq/issues"
+    "url": "https://github.com/ryosuzuki/vizq-web/issues"
   },
   "engine": {
     "node": "^0.11.9"
   },
-  "homepage": "https://github.com/ryosuzuki/vizq",
+  "homepage": "https://github.com/ryosuzuki/vizq-web",
   "dependencies": {
     "browserify": "^11.1.0",
     "co-views": "^2.1.0",
@@ -32,6 +32,6 @@
     "koa-static": "^1.4.9",
     "lodash": "^3.10.1",
     "swig": "^1.4.2",
-    "vizq": "git+ssh://git@github.com/ryosuzuki/vizq.git"
+    "vizq": "git+https://git@github.com/ryosuzuki/vizq.git"
   }
 }
