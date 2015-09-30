@@ -26,10 +26,12 @@
   "dependencies": {
     "browserify": "^11.1.0",
     "co-views": "^2.1.0",
+    "hanson": "^1.1.1",
     "koa": "^1.0.0",
     "koa-route": "^2.4.2",
     "koa-static": "^1.4.9",
     "lodash": "^3.10.1",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "vizq": "git+ssh://git@github.com/ryosuzuki/vizq.git"
   }
 }

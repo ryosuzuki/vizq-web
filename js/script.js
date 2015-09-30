@@ -13,7 +13,8 @@ $('#data').text(JSON.stringify(window.data, null, 2));
 
 $('#viz').click( function () {
   var text = editor.getValue();
-  result = vizq.eval(text);
+  var json = hanson.parse(text)
+  result = vizq.eval(json);
   console.log(result);
   $('#result').text(JSON.stringify(result, null, 2));
   $('.item').removeClass('active')
