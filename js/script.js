@@ -1,13 +1,10 @@
 vizq.load(data.slice(0,1000))
 
-// var data = require('data/fcq.5000.json')
+var result;
 var editor = ace.edit("editor");
-
 var text = "{\n  Subject: 'col',\n  CrsLvlNum: 'col'\n}"
 editor.setValue(text);
 
-
-var result;
 
 $('#data').text(JSON.stringify(window.data, null, 2));
 
